@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+#top{
+    height:100vh;
+    position: relative;
+    background-image: url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#intro{
+    width: 100%;
+    position:absolute;
+    top: 10px;
+    color: aliceblue;
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#name{
+    font-size: 1.1em;
+    padding: 5px;
+}
+#role{
+    font-size: 2em;
+    padding: 5px;
+    text-transform: uppercase;
+}
+#workheading{
+    background:black;
+    color: aliceblue;
+    padding: 30px;
+}
+#workheading span{
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+#workheading span strong{
+    font-size: 2.005em;
+}
+#middle{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    max-width: 320px;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px; 
+    box-shadow: 3px 3px 2px grey;  
+    transition: all 0.2s ease;
+}
+.box img{
+    width: 310px;
+}
+.box h4,.box p{
+    padding: 5px;
+    margin: 5px;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.bottombox{
+    width: 49vw;
+    padding: 20px;
+    color: aliceblue;   
+}
+.bottombox h1,.bottombox p{
+    padding: 10px;
+}
+.bottombox h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+#contact{
+    background-color: #515603;;
+}
+#about{
+    background-color: #722300;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+@media screen and (max-width:500px) {
+    #top{
+        height: 50vh;
+    }
+
+    #name{
+        font-size: 1em;
+        padding: 5px;
+    }
+    #role{
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    #workheading span{
+        font-size: 1.1em;
+}
+#bottom{
+flex-direction: column;
+   }
+
+   .bottombox{
+    width: 100vw;
+       
+}
+.bottombox h1{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+footer{
+font-size: 12px;
+}
+}

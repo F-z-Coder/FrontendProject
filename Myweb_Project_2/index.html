@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+  
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h1>Job Application (web)</h1>
+        </div>
+    <form class="formcont" action="#" method="get">
+        <div class="fileds">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+
+        <div class="fileds">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+
+        <div class="fileds">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="fileds">
+            <label for="jobrole">Job Role</label>
+            <select name="jobrole" id="jobrole">
+                <option value="" disabled selected>Select your option</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="java Developer">java Developer</option>
+                <option value="fultter Developer">fultter Developer</option>
+            </select>
+        </div>
+
+        <div class="fileds" id="addresscontainer">
+            <label for="Address">Address</label>
+            <textarea name="Address" id="Address"  rows="10" cols="70" style="max-width: 530px; height: 215px;"></textarea>
+        </div>
+
+        <div class="fileds">
+            <label for="City">City</label>
+            <input type="text" name="City" id="City">
+        </div>
+
+        <div class="fileds">
+            <label for="Pincode">Pincode</label>
+            <input type="number" name="Pincode" id="Pincode">
+        </div>
+
+        <div class="fileds">
+            <label for="startdate">Start Date</label>
+            <input type="date" name="startdate" id="startdate">
+        </div>
+
+        <div class="fileds">
+            <label for="cv">Upload Your CV </label>
+            <input type="file" name="cv" id="cv">
+        </div>
+    </form>
+    <div id="btn" >
+        <button type="submit">Apply Now</button>
+    </div>
+</div>
+</body>
+</html>
